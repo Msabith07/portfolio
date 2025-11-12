@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu</title>
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+    <header>
+        <img src="user-profile-shadow-symbol-icon-isolated-illustration-vector.jpg" alt="sabith">
+        <nav class="top-bar" id="top-bar">
+            <ul>
+                <li id="sas"><a href="">About</a></li>
+                <li><a href="">Works</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Skills</a></li>
+            </ul>
+
+        </nav>
+             <div class="hamburger" id="hamburger" onclick="
+                
+                let menu = ()=>{
+                console.log('hamburg working')
+                let menuElement = document.getElementById('hamburger');
+                let menuElement2 = document.getElementById('top-bar');
+                
+                let clicked = menuElement.classList.contains('clicked');
+                let sidebar = menuElement2.classList.contains('side-bar');
+                console.log(sidebar)
+                
+                
+                if(clicked) {
+                     menuElement.classList.remove('clicked');
+                } else {
+                   menuElement.classList.add('clicked'); 
+                }
+                if(sidebar) {
+                     menuElement2.classList.remove('side-bar');
+                } else {
+                   menuElement2.classList.add('side-bar'); 
+                }
+                }
+                menu();
+            ">
+                <div class="dot" id="one"></div>
+                <div class="dot" id="one"></div>
+                <div class="dot" id="two"></div>
+            </div>
+        
+        <!-- <div class="side-bar">
+            <ul>
+                
+            </ul>
+
+        </div> -->
+    </header>
+
+        
+</body>
+</html>

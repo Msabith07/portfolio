@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class</title>
+</head>
+<body>
+    <button onclick="myFunction()">hide it</button>
+    <button onclick="myFunction2()">change it</button>
+    <h1 class="city" id="hello">heloo world</h1>
+    <h1 class="city">heloo world</h1>
+    <h1 class="city">heloo world</h1>
+    <script>
+        function myFunction() {
+            var x=document.getElementsByClassName("city");
+            console.log(x)
+            for (var i = 0; i < x.length; i++) {
+                x[i].style.display="none";
+            }
+            
+        }
+        function myFunction2() {
+            document.getElementById("hello").innerHTML="bye world";
+
+        }
+    </script>
+    <iframe src="html/05-11-2025/forms.html" style="height:200px; width:300px; border: none;" title="w3school" name="frames"></iframe>
+    <p><a href="https://www.youtube.com/embed/-D068iydQpY?si=2QyGF_Z8eWBVYXje" target="frames">click here</a></p>
+    <p><a href="html/05-11-2025/forms.html" target="frames">not click here</a></p>
+</body>
+</html>

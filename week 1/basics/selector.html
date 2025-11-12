@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selectors</title>
+    <style>
+        *{
+            color: rgb(64, 0, 255);
+            font-size: 1.2em;
+        }
+        div+p{
+            color: rgb(255, 0, 174);
+        }
+        div-p{
+            color: rgb(0, 0, 0);
+        }
+        div{
+            color: red;
+        }
+        div.main {
+            color: black;
+        }   
+        .main >p {
+            color: rgb(212, 255, 0);
+        }
+        /* div p {
+            color: green;
+        } */
+        
+
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus excepturi vero mollitia culpa, ducimus facilis porro voluptatum repellendus nihil vitae.</p>
+    <div class="main">
+        css selectors
+        <p>Lorem ipsum, dolor sit amets <span> consectetur adipisicing elit.</span> Deleniti facilis inventore amet minus voluptates dolores consequuntur vero unde voluptatibus nihil!</p>
+        <div class="sub"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae iste voluptas quibusdam ducimus alias numquam consequatur quam saepe minima culpa.</p>></div>
+        <div class="sub">ab</div>
+        <div class="sub">ab</div>
+        <div class="sub">ab</div>
+
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad fugit consequuntur est sequi explicabo incidunt doloremque iure, quis doloribus sed.</p>
+</body>
+</html>

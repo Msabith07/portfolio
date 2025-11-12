@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        .main{
+            background-color: gray;
+            padding: 10px;
+            display: grid;
+            /* grid-template-columns: auto auto auto; */
+            /* height: 300px; */
+            /* column-gap: 10px; */
+            gap: 10px;
+            /* grid-template-rows: 50px 50px ; */
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            grid-template-columns: repeat(12,1fr);
+            /* align-content: space-evenly; */
+            /* place-content: end end;
+            place-content: center;
+            place-content: end space-between; */
+            grid-template-areas: 'myHeader myHeader myHeader myHeader myHeader'
+                                 'menu main main main right'
+                                 'menu footer footer footer footer';
+            
+        }
+        .main div{
+            background-color: white;
+            border: 1px solid black;
+            /* height: 50px;
+            width: 50px; */
+            /* height: 100px;
+            width: 100px; */
+            align-content: center;
+            /* justify-content: center; */
+            text-align: center;
+        }
+        /* .item{
+            grid-area: 2 / 2 / span 2 / span 2;
+        } */
+        .item1{
+            grid-area: myHeader;
+            justify-self: center;
+        }
+        .item2{
+            grid-area: menu;
+        }
+        .item3{
+            grid-area: main;
+        }
+        .item4{
+            grid-area: right;
+        }
+        .item5{
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="item1">item1</div>
+        <div class="item2">item2</div>
+        <div class="item3">item3</div>
+        <div class="item4">item4</div>
+        <div class="item5">item5</div>
+        <div>item1</div>
+        <div>item2</div>
+        <div>item3</div>
+        <div>item4</div>
+        <div>item5</div>
+        <div>item4</div>
+        <div>item5</div>
+        <!-- <div class="item6">item1</div> -->
+        <!-- <div class="item">item2</div> -->
+        <!-- <div>item3</div>
+        <div>item4</div>
+        <div>item5</div>
+        <div>item5</div>
+        <div>item5</div> -->
+    </div>
+</body>
+</html>
